@@ -84,7 +84,7 @@ public abstract class ChunkLoaderThread implements Runnable {
     }
 
     public void printSettings(){
-        Bukkit.getLogger().info("[UhcCore] Generating environment "+world.getEnvironment().toString());
+        Bukkit.getLogger().info("[UhcCore] Generating environment " + world.getEnvironment().toString() + "|" + String.valueOf(world.getSeed()));
         Bukkit.getLogger().info("[UhcCore] Loading a total "+Math.floor(totalChunksToLoad)+" chunks, up to chunk ( "+maxChunk+" , "+maxChunk+" )");
         Bukkit.getLogger().info("[UhcCore] Resting "+restDuration+" ticks every "+restEveryNumOfChunks+" chunks");
         Bukkit.getLogger().info("[UhcCore] Loading map "+getLoadingState()+"%");

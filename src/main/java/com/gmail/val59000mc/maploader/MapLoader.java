@@ -302,8 +302,8 @@ public class MapLoader {
 			VersionUtils.getVersionUtils().setGameRuleValue(world, ANNOUNCE_ADVANCEMENTS, false);
 		}
 		VersionUtils.getVersionUtils().setGameRuleValue(world, COMMAND_BLOCK_OUTPUT, false);
-		VersionUtils.getVersionUtils().setGameRuleValue(world, LOG_ADMIN_COMMANDS, false);
-		VersionUtils.getVersionUtils().setGameRuleValue(world, SEND_COMMAND_FEEDBACK, false);
+		VersionUtils.getVersionUtils().setGameRuleValue(world, LOG_ADMIN_COMMANDS, true);
+		VersionUtils.getVersionUtils().setGameRuleValue(world, SEND_COMMAND_FEEDBACK, true);
 		world.setDifficulty(difficulty);
 
 		setBorderSize(world, 0, 0, borderSize);

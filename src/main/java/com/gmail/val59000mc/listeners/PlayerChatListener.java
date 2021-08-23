@@ -61,6 +61,7 @@ public class PlayerChatListener implements Listener{
 	}
 
 	private boolean isTeamMessage(AsyncPlayerChatEvent e, UhcPlayer uhcPlayer){
+		e.setFormat("[" + uhcPlayer.getTeam().getTeamName() + "]" + e.getFormat());
 		if (configuration.get(MainConfig.ENABLE_CHAT_PREFIX)){
 			if (e.getMessage().startsWith(configuration.get(MainConfig.TEAM_CHAT_PREFIX))){
 				e.setMessage(e.getMessage().replaceFirst(configuration.get(MainConfig.TEAM_CHAT_PREFIX), ""));
